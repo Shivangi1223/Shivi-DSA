@@ -17,19 +17,44 @@
 // }
 
 
-#include<iostream>
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     // int n;
+//     // cin>>n;
+
+//     // cout<< "Value of n is: "<< n << endl;
+
+//    int a , b;
+
+//    a = cin.get(); //"Using cin.get(), we can also take whitespace characters like tab, enter, and space as input."
+
+//    cout<<"value of a "<<a<<endl;
+//     return 0;
+// }
+
+
+#include <iostream>
 using namespace std;
 
-int main(){
-    // int n;
-    // cin>>n;
+int main() {
+    char ch;
+    cout << "Enter a character: ";
+    cin >> ch;
 
-    // cout<< "Value of n is: "<< n << endl;
+    if(ch >= 'a' && ch <= 'z') {
+        cout << "Lowercase letter" << endl;
+    }
+    else if(ch >= 'A' && ch <= 'Z') {
+        cout << "Uppercase letter" << endl;
+    }
+    else if(ch >= '0' && ch <= '9') {
+        cout << "Numeric digit" << endl;
+    }
+    else {
+        cout << "Special character or symbol" << endl;
+    }
 
-   int a , b;
-
-   a = cin.get(); //"Using cin.get(), we can also take whitespace characters like tab, enter, and space as input."
-
-   cout<<"value of a "<<a<<endl;
     return 0;
 }
