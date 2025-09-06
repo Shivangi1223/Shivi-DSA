@@ -28,7 +28,7 @@ int main(){
 
    int a , b;
 
-   a = cin.get();
+   a = cin.get(); //"Using cin.get(), we can also take whitespace characters like tab, enter, and space as input."
 
    cout<<"value of a "<<a<<endl;
     return 0;
